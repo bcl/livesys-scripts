@@ -1,6 +1,7 @@
 #!/bin/bash
 #
 # live: Late init script for live image
+# SPDX-License-Identifier: GPL-3.0-or-later
 
 if ! strstr "`cat /proc/cmdline`" rd.live.image || [ -e /.liveimg-late-configured ] ; then
     exit 0

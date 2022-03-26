@@ -1,6 +1,7 @@
 #!/bin/bash
 #
 # live-i3: i3 specific setup for livesys
+# SPDX-License-Identifier: GPL-3.0-or-later
 #
 
 
