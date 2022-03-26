@@ -1,0 +1,12 @@
+[Unit]
+Description=Late Initialization for live environments
+After=livesys.service
+Before=display-manager.service chronyd.service
+ConditionKernelCommandLine=rd.live.image
+
+[Service]
+type=oneshot
+ExecStart=/usr/libexec/livesys/livesys-late
+
+[Install]
+Wantedby=multi-user.target
