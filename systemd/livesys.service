@@ -4,8 +4,8 @@ Before=display-manager.service chronyd.service
 ConditionKernelCommandLine=rd.live.image
 
 [Service]
-type=oneshot
+Type=oneshot
 ExecStart=/usr/libexec/livesys/livesys-main
 
 [Install]
-Wantedby=multi-user.target
+WantedBy=multi-user.target
