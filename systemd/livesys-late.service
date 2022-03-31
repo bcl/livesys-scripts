@@ -3,6 +3,7 @@ Description=Late Initialization for live environments
 After=livesys.service
 Before=display-manager.service chronyd.service
 ConditionKernelCommandLine=rd.live.image
+ConditionPathExists=!/.liveimg-late-configured
 
 [Service]
 Type=oneshot

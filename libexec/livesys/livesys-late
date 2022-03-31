@@ -3,6 +3,8 @@
 # live: Late init script for live image
 # SPDX-License-Identifier: GPL-3.0-or-later
 
+. /usr/libexec/livesys/functions
+
 if ! strstr "`cat /proc/cmdline`" rd.live.image || [ -e /.liveimg-late-configured ] ; then
     exit 0
 fi
