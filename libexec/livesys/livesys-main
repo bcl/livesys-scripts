@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 #
 
+. /usr/libexec/livesys/functions
+
 if ! strstr "`cat /proc/cmdline`" rd.live.image; then
     exit 0
 fi
